@@ -1,0 +1,20 @@
+{
+  "name": "stock_controller_api",
+  "version": "1.0.0",
+  "description": "REST API's con Express y Typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oscar Moreno @odmoreno",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.20",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
