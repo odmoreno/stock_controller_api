@@ -6,3 +6,4 @@ Es una aplicación completa desarrollada para la gestión de productos, que perm
 - PostgreSQL
 - Typescript
 - Jest & Supertest
+- Documentacion con Swagger
