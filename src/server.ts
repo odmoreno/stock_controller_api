@@ -1,10 +1,11 @@
 import colors from 'colors'
 import express from 'express'
 import router from './router'
-import db from './config/dbt'
+import db from './config/db'
+import swaggerUI from 'swagger-ui-express'
+import swaggerSpect from './config/swagger'
 
 //conectar a base de datops
-
 export async function connectDB() {
     try {
         await db.authenticate()
@@ -25,8 +26,7 @@ server.use(express.json())
 
 server.use('/api/products', router)
 
-server.get('/api', (req, res) => {
-    res.json({ msg: 'DEsde api' })
-})
+// Docs 
+server.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerSpect))
 
 export default server
