@@ -24,7 +24,7 @@ describe('connectDB', () => {
             .mockRejectedValueOnce(new Error('Hubo un error al conectar a la BD'))
         const consoleSpy = jest.spyOn(console, 'log')
 
-        await connectDB
+        await connectDB()
 
         expect(consoleSpy).toHaveBeenCalledWith(
             expect.stringContaining('Hubo un error al conectar a la BD')
