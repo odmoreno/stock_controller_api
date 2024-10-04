@@ -5,3 +5,4 @@ Es una aplicación completa desarrollada para la gestión de productos, que perm
 - Express
 - PostgreSQL
 - Typescript
+- Jest & Supertest
