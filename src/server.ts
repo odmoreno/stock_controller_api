@@ -5,14 +5,13 @@ import db from './config/dbt'
 
 //conectar a base de datops
 
-async function connectDB() {
+export async function connectDB() {
     try {
         await db.authenticate()
         db.sync()
         //console.log(colors.blue("Conexion existosa a la db"))
     } catch (error) {
-        //console.log(error)
-        console.log(colors.red.bold("error al conectar a la db"))
+        console.log(colors.red.bold("Hubo un error al conectar a la BD"))
     }
 }
 
