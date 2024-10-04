@@ -10,7 +10,8 @@ const db = new Sequelize(process.env.DATABASE_URL!, { // o ?ssl=true
         ssl: {
             require: false
         }
-    }
+    },
+    logging: false
 })
 
 export default db
