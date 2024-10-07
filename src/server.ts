@@ -1,5 +1,6 @@
 import express from 'express'
 import cors, { CorsOptions } from 'cors'
+import morgan from 'morgan'
 import colors from 'colors'
 import router from './router'
 import path from 'path'
@@ -38,6 +39,7 @@ server.use(cors(corsOptions))
 //leer datos de formularios - habilitar lectura de jsons
 server.use(express.json())
 
+server.use(morgan('dev'))
 server.use('/api/products', router)
 
 // Sirve archivos estáticos desde la carpeta 'public'

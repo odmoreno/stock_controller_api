@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "./dist",
+        "outDir": "./dist", //carpeta del compilado
         "rootDir": "./src",
         "lib": ["esnext"],
         "target": "ESNext", // que version quiere compilar
@@ -14,4 +14,5 @@
         "emitDecoratorMetadata": true // Para decoradores
     },
     "include": ["src/**/*.ts"],
+    "exclude": ["src/**/*.test.ts"]
 }
