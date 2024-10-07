@@ -7,3 +7,5 @@ Es una aplicación completa desarrollada para la gestión de productos, que perm
 - Typescript
 - Jest & Supertest
 - Documentacion con Swagger
+
+[Frontend Repo](https://github.com/odmoreno/stock_manager_app)
